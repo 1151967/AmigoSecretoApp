@@ -24,7 +24,7 @@ function agregarAmigo() {
     mostrarLista();
 }
 
-// Función para mostrar la lista de amigos en la pantalla
+// Función para mostrar la lista de amigos en la pantalla xd
 function mostrarLista() {
     const listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';  // Limpiar la lista antes de volver a mostrarla
@@ -36,17 +36,17 @@ function mostrarLista() {
     });
 }
 
-// Función para sortear un ganador aleatorio
+// Función para sortear un ganador y que sea aleatorio eso
 function sortearAmigo() {
     if (amigos.length === 0) {
         alert('No hay amigos en la lista para sortear');
         return;
     }
 
-    // Escoger un ganador aleatorio
+    // Pa escoger un ganador aleatorio
     const ganador = amigos[Math.floor(Math.random() * amigos.length)];
 
-    // Mostrar el ganador en la interfaz
+    // Mostrar el ganador
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = `¡El ganador es: ${ganador}!`;
 }
